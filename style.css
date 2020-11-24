@@ -18,7 +18,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 50%;
-  margin-top: 5%;
+  margin: 7.5vh 0;
   background-color: rgba(226, 179, 130, 0.8); /* #e2b382; */
   border: 5px dashed #7c3b13;
   color: #7c3b13;
@@ -78,4 +78,14 @@ label {
   background-color: #37af65;
   color: white;
   font-size: 28px;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: 90vw;
+  }
+
+  #survey-form {
+    width: 75vw;
+  }
 }
