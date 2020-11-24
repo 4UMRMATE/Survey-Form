@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+          <h1 id="title">The Best Restaurant in The World</h1>
+          <h2 id="form-title">Customer Satisfaction Survey</h2>
+          <p id="description">Plese help us improve our service by completing this short survey.</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input class="form-inputs" id="name" type="text" placeholder="Enter your name" required></input>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input class="form-inputs" id="email" type="email" placeholder="Enter your Email" required></input>
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">Age</label>
+            <input class="form-inputs" id="number" type="number" placeholder="Age" min="18" max="99"></input>
+        </div>
+        <div class="form-group">
+            <p>How long have you known about our Restaurant?</p>
+            <select id="dropdown">
+                <option selected disabled>Select from this options</option>
+                <option value="new">I Just Heared About The Place</option>
+                <option value="customer">I Have Been There Couple Times</option>
+                <option value="regular">I'm Fairly Regular</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>The waiting time in our Restaurant is:</p>
+            <label><input name="customer-waiting-time" type="radio" value="normal">About What I Expected</label>
+            <label><input name="customer-waiting-time" type="radio" value="long">A little Longer Then I Expected</label>
+            <label><input name="customer-waiting-time" type="radio" value="too-long">Much Longer Then I Expected</label>
+        </div>
+        <div class="form-group">
+            <p>How did you first learn of our restaurant?</p>
+            <label><input type="checkbox" value="advertisement">Advertisement</label>
+            <label><input type="checkbox" value="word-of-mouth">Word of Mouth</label>
+            <label><input type="checkbox" value="news-story">News Story</label>
+            <label><input type="checkbox" value="seach-engine">Search Engine</label>
+            <span id="other-checkbox">
+                <label><input type="checkbox" id="other" value="other"> Other</label>
+                <input id="other-input" type="text" onclick="checkOthersBox()">
+            </span>
+        </div>
+        <div class="form-group">
+            <p>Would you recommend our restaurant to a friend?</p>
+            <label><input name="customer-recommends" type="radio" value="yes">Yes</label>
+            <label><input name="customer-recommends" type="radio" value="no">No</label>
+        </div>
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea id="user-comment" cols="30" rows="5" maxlength="200" placeholder="Enter your comment here... (max. 200 letters)"></textarea>
+        </div>
+        <div class="form-group">
+            <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+/* */
+
+* {
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("background.jpg");
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-top: 5%;
+  background-color: rgba(226, 179, 130, 0.8); /* #e2b382; */
+  border: 5px dashed #7c3b13;
+  color: #7c3b13;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.header {
+  text-align: center;
+}
+
+#survey-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+label {
+  margin-bottom: 0.5vh;
+}
+
+.form-inputs {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+}
+
+#dropdown {
+  font-size: 18px;
+}
+
+#other-checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+#other-input {
+  width: 50%;
+  font-size: 18px;
+}
+
+#user-comment {
+  font-size: 18px;
+}
+
+#submit {
+  width: 100%;
+  background-color: #37af65;
+  color: white;
+  font-size: 28px;
+}
